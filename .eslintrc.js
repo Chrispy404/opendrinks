@@ -7,9 +7,15 @@ module.exports = {
 
   extends: [
     'plugin:vue/essential',
+<<<<<<< HEAD
 	'@vue/airbnb',
 	'@vue/eslint-config-airbnb', 
 	'@vue/eslint-config-prettier'
+=======
+    '@vue/airbnb',
+    '@vue/eslint-config-airbnb',
+    '@vue/eslint-config-prettier',
+>>>>>>> upstream/master
   ],
 
   rules: {
@@ -23,6 +29,7 @@ module.exports = {
 
   overrides: [
     {
+<<<<<<< HEAD
       files: [
         '**/__tests__/*.{j,t}s?(x)'
       ],
@@ -31,4 +38,12 @@ module.exports = {
       }
     }
   ]
+=======
+      files: ['**/__tests__/*.{j,t}s?(x)'],
+      env: {
+        jest: true,
+      },
+    },
+  ],
+>>>>>>> upstream/master
 };
